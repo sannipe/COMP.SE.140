@@ -1,0 +1,19 @@
+{
+  "name": "service1",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "service1.js",
+  "scripts": {
+    "test": "node service1.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0",
+    "node-fetch": "^3.3.2",
+    "check-disk-space": "^2.1.0"
+  }
+}
+
