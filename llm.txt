@@ -1,0 +1,9 @@
+Tool: ChatGpt-5
+
+Motivation/Reason to use LLM: The reson to use LLM was to help with finding different solutions to get runtime and disk space and finding an error in the docker-compose file. 
+
+How and why LLM helped: LLM gives shorter answers than a google search with explanations of how the code works. It gave suggestions to the problem mentioned above as well as found the error in the docker-compose file that caused to the storage to write in the wrong place.
+
+What kind of mistakes the LLM did: The LLM did not account for operating system so it suggested commands that work for Linux rather than for Windows. This was corrected with a new promt asking for a solution for the correct platform.
+
+What things LLM was not able to provide: -
