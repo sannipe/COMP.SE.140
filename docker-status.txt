@@ -1,0 +1,14 @@
+docker container ls
+
+CONTAINER ID   IMAGE             COMMAND                  CREATED          STATUS          PORTS                                         NAMES
+434bd839c9da   devops-service1   "docker-entrypoint.s…"   22 seconds ago   Up 21 seconds   0.0.0.0:8199->8199/tcp, [::]:8199->8199/tcp devops-service1-1
+ced666c960ae   devops-service2   "python main.py"         23 seconds ago   Up 21 seconds   5000/tcp devops-service2-1
+a8019090a432   devops-storage    "python main.py"         23 seconds ago   Up 22 seconds   5001/tcp devops-storage-1
+
+docker Network ls
+
+NETWORK ID     NAME             DRIVER    SCOPE
+00d65a78fb6a   bridge           bridge    local
+0bdcd715adcd   devops_default   bridge    local
+5a3b78f54032   host             host      local
+5e1adcafa62b   none             null      local
