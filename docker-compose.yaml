@@ -22,7 +22,7 @@ services:
     build:
       context: ./storage
     volumes:
-      - ./vstorage:/vstorage
+      - vstorage:/vstorage
 
 volumes:
   vstorage:
