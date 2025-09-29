@@ -12,12 +12,14 @@ start_time = time.time()
 def make_record():
     time_now = time.time()
     timestamp = datetime.fromtimestamp(time_now).isoformat()   
+    timestamp_iso = str(timestamp)[:-3] + "Z"
+    
     uptime = (time_now-start_time)/3600
 
     total, used, free = shutil.disk_usage("/")
     mb = 1024*1024
 
-    record = f"{timestamp}: uptime {uptime:.2f} hours, free disk in root: {free/mb:.2f} Mbytes"
+    record = f"{timestamp_iso}: uptime {uptime:.2f} hours, free disk in root: {free/mb:.2f} Mbytes"
     return record
 
 # A route to return status
